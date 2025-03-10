@@ -1,0 +1,17 @@
+// Create a new XMLHttpRequest object
+var xhr = new XMLHttpRequest();
+
+// Configure it: GET-request for the URL /data.json
+xhr.open('GET', 'data.json', true);
+
+// Set up the callback function to handle the response
+xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        // Parse the JSON response and log it
+        var data = JSON.parse(xhr.responseText);
+        console.log(data);
+    }
+};
+
+// Send the request
+xhr.send();

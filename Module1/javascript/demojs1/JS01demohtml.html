@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro To JavaScript </title>
+    <link rel="stylesheet" href="L04FullPageLayoutwithFlexbox.css">
+
+</head>
+<body>
+
+    <div id="name"></div>
+    <div id="details"></div>
+    <div class="wrapper">
+    <button id="testidval" onclick="myJSFunctionIn()"> Inline</button>
+    <button onclick="myJSFunctionExt()"> External File JS</button>
+    <script>
+        function myJSFunctionIn() {
+        document.getElementById("name").innerHTML = "This JavaScript function is with the file - InLine Method";
+        }
+        </script>
+
+        <script src="JS01Intro.js"></script>
+    </div>
+</body>
+</html>
