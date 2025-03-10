@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style Example</title>
+</head>
+<body>
+    <div id="myDiv">Click the button to change my style!</div>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <script>
+        function changeStyle() {
+            // Access the element by ID
+            var element = document.getElementById('myDiv');
+            // Change its CSS properties
+            element.style.color = 'red';
+            element.style.fontSize = '20px';
+            element.style.fontWeight = 'bold';
+        }
+    </script>
+</body>
+</html>

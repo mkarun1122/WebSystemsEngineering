@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic CSS with JavaScript</title>
+</head>
+<body>
+  <div id="myDiv">This is some text to style dynamically.</div>
+  <button onclick="addCSS()">Add CSS</button>
+
+  <script>
+    function addCSS() {
+      let style = document.createElement("style");
+      style.innerHTML = `
+        #myDiv {
+          color: green;
+          font-size: 24px;
+          background-color: lightgray;
+        }
+      `;
+      document.head.appendChild(style);
+    }
+  </script>
+</body>
+</html>

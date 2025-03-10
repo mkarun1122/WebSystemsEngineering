@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo">Hello Sending text to flatfile </p>
+ 
+<script>
+function loadDoc() {
+    const url = "http://127.0.0.1:5500/AJAXDemo1/basicAjaxPost.html";
+fetch(url, {
+    method : "POST",
+    body: new FormData(document.getElementById("demo")),
+    // -- or --
+    // body : JSON.stringify({
+        // user : document.getElementById('user').value,
+        // ...
+    // })
+}).then(
+    response => response.text() // .json(), etc.
+    // same as function(response) {return response.text();}
+).then(
+    html => console.log(html)
+);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <textarea id="xmlhttpdemo1"></textarea> 
+    <input type="text" id="empage"></input> 
+    <input type="text" id="empcity"></input>
+
+<h1>AJAX /w  XMLHttpRequest JSON Parser</h1>
+<button type="button" onclick="loaddatafromtxt()">Change Content</button>
+</div>
+
+<script>
+function loaddatafromtxt() {
+ // Create a new XMLHttpRequest object
+var xhr = new XMLHttpRequest();
+
+// Configure it: GET-request for the URL /data.json
+xhr.open('GET', 'data.json', true);
+
+// Set up the callback function to handle the response
+xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        // Parse the JSON response and log it
+        var data = JSON.parse(xhr.responseText);
+
+
+        var jsonreq1 = document.getElementById("xmlhttpdemo1")
+        jsonreq1.value =  data.employee['name']
+
+        document.getElementById("empage").value = data.employee['age']
+        document.getElementById("empcity").value = data.employee['city']
+        console.log(data);
+    }
+};
+
+// Send the request
+xhr.send();
+
+}
+</script>
+
+</body>
+</html>

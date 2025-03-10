@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="changeColorBtn">Change Background Color</button>
+
+    <script>
+        // JavaScript
+document.getElementById('changeColorBtn').addEventListener('click', function() {
+  document.body.style.backgroundColor = 'lightblue';  // Change background color
+});
+
+
+
+document.getElementById('changeColorBtn').addEventListener('click', function() {
+  document.body.style.cssText = 'background-color: #ffcccb; font-size: 20px; color: blue;';
+});
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 768) {
+    document.body.style.backgroundColor = 'lightgreen';  // Change color on smaller screens
+  } else {
+    document.body.style.backgroundColor = '';  // Reset color on larger screens
+  }
+});
+
+
+
+    </script>
+    
+</body>
+</html>
