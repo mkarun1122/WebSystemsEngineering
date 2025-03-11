@@ -42,7 +42,7 @@ scripting using PHP.
 IV.COURSE CONTENT:
 ------------------
 
-MODULE - I: INTRODUCTION TO WEB APPLICATION, HTML AND CSS (10)
+MODULE - I: INTRODUCTION TO WEB APPLICATION, HTML AND CSS  <br> 
 Introduction to web application: 
 Internet, 
 Intranet, 
