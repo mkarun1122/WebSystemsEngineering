@@ -56,13 +56,13 @@ web page layouts with CSS,
 introduction to responsive web design with CSS3 and HTML5.
 
 -------------------------------------------------------------------------------------------------------------------------
-MODULE - II: BUILD INTERFCAES USING BOOTSTARP (09)
+MODULE - II: BUILD INTERFCAES USING BOOTSTARP  <br> 
 Introduction to web design from an evolutionary perspective, user interface design through bootstrap, containers,
 tables, jumbotrons, list, cards, carousal, navigation, modals, flex and forms, responsive web page design, basic UI
 grid structure.
 
 -------------------------------------------------------------------------------------------------------------------------
-MODULE - III: INTERACTIVE USER INFERFACE AND WEB APPLICATION DEVELOPMENT (10)
+MODULE - III: INTERACTIVE USER INFERFACE AND WEB APPLICATION DEVELOPMENT  <br> 
 JavaScript variable naming rules, data types, expressions and operators, pattern matching with regular expressions,
 managing web page styles using JavaScript and CSS, script forms, introduction to AJAX.
 
@@ -71,7 +71,7 @@ Introduction to web design from an evolutionary perspective, create a native and
 components, props, state, lifecycle methods, and hooks.
 
 -------------------------------------------------------------------------------------------------------------------------
-MODULE - IV: UI BINDING LIBRARY FOR REACT AND REDUX (09)
+MODULE - IV: UI BINDING LIBRARY FOR REACT AND REDUX  <br> 
 Introduction to client-side routing using React Router, global state management and transitions using REDUX,
 server -side rendering and testing using Jest. Web Development Using REACT is delivered both in a blended
 learning and self-paced mode.
@@ -81,7 +81,7 @@ that particular API, adding an API service as a middleware, example uses create 
 -------------------------------------------------------------------------------------------------------------------------
 
 
-MODULE - V: INTRODUCTION TO PHP AND SERVER-SIDE SCRIPTING (10)
+MODULE - V: INTRODUCTION TO PHP AND SERVER-SIDE SCRIPTING  <br> 
 Introduction to PHP: Declaring variables, data types, arrays, strings, operations, expressions, control structures,
 functions, Reading data from web form controls like Text Boxes, radio buttons, lists etc., Handling File Uploads,
 Connecting to database (My SQL as reference), executing simple queries, handling results, Handling sessions and
