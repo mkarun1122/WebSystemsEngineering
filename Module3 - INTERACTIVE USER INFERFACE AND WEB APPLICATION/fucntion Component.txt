@@ -1,0 +1,56 @@
+
+
+html
+Copy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Function Component Example</title>
+  <style>
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #hiddenText {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<button id="toggleButton" class="button">Show Text</button>
+<p id="hiddenText">This is the hidden text!</p>
+
+<script>
+  function toggleText() {
+    const textElement = document.getElementById('hiddenText');
+    const button = document.getElementById('toggleButton');
+
+    if (textElement.style.display === 'none') {
+      textElement.style.display = 'block';
+      button.textContent = 'Hide Text';
+    } else {
+      textElement.style.display = 'none';
+      button.textContent = 'Show Text';
+    }
+  }
+
+  // Attach the toggleText function to the button click event
+  document.getElementById('toggleButton').addEventListener('click', toggleText);
+</script>
+
+</body>
+</html>
+
+
+Example: JavaScript Function for a Component
+In this example, we'll use a function to create a component that handles a button click to toggle visibility of a text element.
+
+
+Explanation of the JavaScript Function Example:
+Function: The toggleText function is used to toggle the visibility of the paragraph with the text and change the button text.
+Event Listener: The function is attached to the button's click event, so it runs when the button is clicked.

@@ -1,0 +1,61 @@
+Example Using Apache Cordova
+Install Cordova:
+
+First, install Cordova using npm (Node Package Manager):
+
+
+npm install -g cordova
+Create a New Cordova Project:
+
+After installing Cordova, create a new project:
+
+
+cordova create myApp com.example.myapp MyApp
+cd myApp
+Add a Platform (iOS/Android):
+
+Add the platform you want to build for:
+cordova platform add android
+# Or for iOS (on macOS only):
+cordova platform add ios
+Write Your App:
+
+Inside the www/ directory, you can write your app’s HTML, CSS, and JavaScript. Here's an example of a simple index.html:
+
+html
+Copy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Native App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <h1>Welcome to My Native App!</h1>
+  <button id="clickMe">Click Me</button>
+
+  <script>
+    // app.js
+    document.getElementById("clickMe").addEventListener("click", () => {
+      alert("Button Clicked in Native App!");
+    });
+  </script>
+</body>
+</html>
+Build Your App:
+
+Once your code is ready, you can build your app:
+
+cordova build android
+# Or for iOS:
+cordova build ios
+Run the App on a Device/Simulator:
+
+To run your app on a physical device or emulator, use:
+
+cordova run android
+# Or for iOS:
+cordova run ios
