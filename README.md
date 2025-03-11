@@ -29,18 +29,18 @@ IV. The characteristics, systematic methods, model for developing web applicatio
 III. COURSE OUTCOMES:
 ---------------------
 
-At the end of the course students should be able to:
+At the end of the course students should be able to:  <br> 
 CO 1 Summarize HTML elements and attributes for structuring and presenting content of webpage based on
-the user requirement.
-CO 2 Make use of CSS properties for formatting webpages.
-CO 3 Develop responsive webpage using Bootstrap for viewing web pages in various devices
-CO 4 Utilize the concepts of JS with event actions for displaying information on webpages.
-CO 5 Identify UI binding library elements for deploying a reusable complex UI React Redux.
+the user requirement.<br> 
+CO 2 Make use of CSS properties for formatting webpages.<br> 
+CO 3 Develop responsive webpage using Bootstrap for viewing web pages in various devices<br> 
+CO 4 Utilize the concepts of JS with event actions for displaying information on webpages.<br> 
+CO 5 Identify UI binding library elements for deploying a reusable complex UI React Redux.<br> 
 CO 6 Develop web applications with the help of React Redux framework and serverside
-scripting using PHP.
+scripting using PHP.<br> 
 
-IV.COURSE CONTENT:
-------------------
+IV.COURSE CONTENT:<br> 
+------------------<br> 
 
 MODULE - I: INTRODUCTION TO WEB APPLICATION, HTML AND CSS  <br> 
 Introduction to web application: 
@@ -54,13 +54,13 @@ Basics of HTML5 and web design,
 creating tables, lists, HTML forms. Styles and classes to your web pages, 
 web page layouts with CSS, 
 introduction to responsive web design with CSS3 and HTML5.
-
+<br> 
 -------------------------------------------------------------------------------------------------------------------------
 MODULE - II: BUILD INTERFCAES USING BOOTSTARP  <br> 
 Introduction to web design from an evolutionary perspective, user interface design through bootstrap, containers,
 tables, jumbotrons, list, cards, carousal, navigation, modals, flex and forms, responsive web page design, basic UI
 grid structure.
-
+<br> 
 -------------------------------------------------------------------------------------------------------------------------
 MODULE - III: INTERACTIVE USER INFERFACE AND WEB APPLICATION DEVELOPMENT  <br> 
 JavaScript variable naming rules, data types, expressions and operators, pattern matching with regular expressions,
@@ -69,7 +69,7 @@ managing web page styles using JavaScript and CSS, script forms, introduction to
 
 Introduction to web design from an evolutionary perspective, create a native and web app, JSX, class and function
 components, props, state, lifecycle methods, and hooks.
-
+<br> 
 -------------------------------------------------------------------------------------------------------------------------
 MODULE - IV: UI BINDING LIBRARY FOR REACT AND REDUX  <br> 
 Introduction to client-side routing using React Router, global state management and transitions using REDUX,
@@ -77,7 +77,7 @@ server -side rendering and testing using Jest. Web Development Using REACT is de
 learning and self-paced mode.
 REDUX store using the official create store function, REDUX toolkit has a configure store API, loading state for
 that particular API, adding an API service as a middleware, example uses create REACT App.
-
+<br> 
 -------------------------------------------------------------------------------------------------------------------------
 
 
@@ -88,7 +88,7 @@ Connecting to database (My SQL as reference), executing simple queries, handling
 cookies.
 File Handling in PHP: File operations like opening, closing, reading, writing, appending, deleting etc. on text and
 binary files, listing directories.
-
+<br> 
 -------------------------------------------------------------------------------------------------------------------------
 
 
