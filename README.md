@@ -1,8 +1,9 @@
 -------------------------------------------------------
 Profile:
-Name : Mr M Arunkumar  M.Tech(IT) , B.Tech(CSE)
-Phone# +91 9346178393
-Email : mkarun1122@gmail.com
+Name : Mr M Arunkumar  M.Tech(IT) , B.Tech(CSE) from JNTU - Hyderabad <br>
+Phone# +91 9346178393 <br> 
+Email : mkarun1122@gmail.com <br> 
+
 -------------------------------------------------------
 
 
