@@ -1,4 +1,5 @@
-https://devrims.com/blog/how-to-run-a-php-file-using-xampp/
+https://www.apachefriends.org/download.html
+
 
 
 Step 1: Download XAMPP
