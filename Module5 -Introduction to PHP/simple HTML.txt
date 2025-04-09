@@ -1,0 +1,31 @@
+First, you create a simple HTML form with text boxes where users can enter data. The form element in HTML allows you to specify how the data will be sent (GET or POST).
+
+html
+Copy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Form Example</title>
+</head>
+<body>
+    <h1>Enter Your Details</h1>
+    <form action="process.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+In the above example:
+
+A form is created with two text boxes (one for the name and one for the email).
+
+The action attribute of the form specifies the PHP file (process.php) that will process the form data.
+
+The method="POST" means the form data will be sent as a POST request, which is more secure than GET for sending form data, especially sensitive information like email addresses.

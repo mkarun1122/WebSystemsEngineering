@@ -1,0 +1,83 @@
+Declaring Variables in PHP
+
+
+Declaring Variables in PHP
+In PHP, variables are used to store data that can be used later in the program. Variables are declared with a dollar sign ($) followed by the variable name. PHP is a loosely-typed language, meaning that you don't need to specify the data type when declaring a variable—PHP automatically determines the type based on the value assigned to it.
+
+Basic Syntax for Declaring Variables:
+$variable_name = value;
+
+	The dollar sign ($) is used before the variable name.
+	A variable name can contain letters, numbers, and underscores, but cannot start with a number.
+	PHP variables are case-sensitive (i.e., $name and $Name are considered different).
+
+
+Rules for Naming Variables:
+	Variable names must begin with a letter or an underscore (_), not a number.
+	Variable names can contain letters, numbers, and underscores.
+	Variable names are case-sensitive.
+	Avoid using PHP reserved keywords as variable names. Reserved words like echo, function, class, etc., cannot be used as variable names.
+
+
+Variable Types in PHP
+
+String: A sequence of characters.
+	$name = "Alice";
+
+Integer: Whole numbers (positive, negative, or zero).
+	$age = 30;
+
+Float (or Double): Numbers with decimal points.
+	$price = 19.99;
+
+Boolean: Represents true or false.
+	$is_active = true;
+
+Array: A collection of values.
+	$fruits = array("Apple", "Banana", "Cherry");
+
+
+Object: A user-defined data type.
+	class Person {
+		public $name;
+		public $age;
+	}
+	$person = new Person();
+	$person->name = "John";
+	$person->age = 30;
+
+
+Variable Scope
+In PHP, the scope of a variable refers to where the variable can be accessed in the code. There are several types of variable scope:
+
+Local Scope: Variables declared within a function are only accessible inside that function.
+		function greet() {
+			$message = "Hello, World!";  // Local variable
+			echo $message;
+		}
+		greet();  // Outputs: Hello, World!
+		echo $message;  // Error: Undefined variable
+
+Global Scope: Variables declared outside of functions are accessible throughout the script.
+		$name = "Alice";  // Global variable
+
+		function greet() {
+			global $name;  // Access global variable inside a function
+			echo "Hello, " . $name;
+		}
+		greet();  // Outputs: Hello, Alice
+
+
+Superglobals: These are built-in variables in PHP that are globally accessible, regardless of scope. Common superglobals include:
+
+		$_GET - Used to collect form data after submitting an HTML form with method="get".
+
+		$_POST - Used to collect form data after submitting an HTML form with method="post".
+
+		$_SESSION - Used to store session variables.
+
+		$_COOKIE - Used to collect cookies.
+
+		$_SERVER - Contains information about the server environment.
+
+

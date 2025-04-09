@@ -1,0 +1,25 @@
+PHP supports several types of operations:
+
+Arithmetic Operations:
+
+
+$sum = 5 + 3; // Addition
+$diff = 5 - 3; // Subtraction
+$prod = 5 * 3; // Multiplication
+$quot = 5 / 3; // Division
+$mod = 5 % 3; // Modulus (remainder)
+Comparison Operations:
+
+
+$a = 5;
+$b = 3;
+var_dump($a == $b); // Compares values
+var_dump($a === $b); // Compares value and type
+var_dump($a != $b); // Not equal
+Logical Operations:
+
+
+$x = true;
+$y = false;
+var_dump($x && $y); // AND
+var_dump($x || $y); // OR

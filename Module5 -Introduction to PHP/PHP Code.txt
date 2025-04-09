@@ -1,0 +1,28 @@
+Once the form is submitted, PHP will access the values entered in the text boxes through the $_POST superglobal array. In the process.php file, you can retrieve the values like this:
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Check if the form fields are not empty
+    if (isset($_POST['name']) && isset($_POST['email'])) {
+        // Retrieve data from text boxes
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+
+        // Output the data
+        echo "<h1>Your Details</h1>";
+        echo "Name: " . htmlspecialchars($name) . "<br>";
+        echo "Email: " . htmlspecialchars($email) . "<br>";
+    } else {
+        echo "Please fill out the form.";
+    }
+}
+?>
+In the process.php file:
+
+We first check if the request method is POST to ensure that the form has been submitted.
+
+The $_POST['name'] and $_POST['email'] retrieve the values entered in the text boxes.
+
+We use htmlspecialchars() to escape any special characters (like < or >) to prevent security issues like XSS (cross-site scripting).
+
+If the form fields are empty, a message prompts the user to fill out the form.
