@@ -1,0 +1,17 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Read the text box value
+    $name = isset($_POST['name']) ? $_POST['name'] : 'Not provided';
+    
+    // Read the selected radio button value
+    $gender = isset($_POST['gender']) ? $_POST['gender'] : 'Not selected';
+    
+    // Read the dropdown list value
+    $country = isset($_POST['country']) ? $_POST['country'] : 'Not selected';
+    
+    // Output the data
+    echo "Name: " . htmlspecialchars($name) . "<br>";
+    echo "Gender: " . htmlspecialchars($gender) . "<br>";
+    echo "Country: " . htmlspecialchars($country) . "<br>";
+}
+?>

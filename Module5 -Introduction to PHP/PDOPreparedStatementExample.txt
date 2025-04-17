@@ -1,0 +1,32 @@
+<?php
+$servername = "localhost"; // Database host
+$username = "root";        // Database username
+$password = "";            // Database password
+$dbname = "your_database"; // Database name
+
+try {
+    // Create a new PDO instance
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    
+    // Set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Prepared statement
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username");
+    $stmt->bindParam(':username', $username);
+
+    // Set the value of $username and execute
+    $username = "john_doe";
+    $stmt->execute();
+
+    // Fetch and display results
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        echo "ID: " . $row['id'] . " - Name: " . $row['name'] . "<br>";
+    }
+
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+
+$conn = null; // Close connection
+?>
