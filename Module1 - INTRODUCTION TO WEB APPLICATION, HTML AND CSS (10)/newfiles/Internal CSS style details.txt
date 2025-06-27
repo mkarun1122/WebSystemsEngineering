@@ -1,0 +1,24 @@
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .btn {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+    }
+
+    .important {
+      font-size: 20px;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="important">This is an important message.</p>
+  <button class="btn">Click Me</button>
+</body>

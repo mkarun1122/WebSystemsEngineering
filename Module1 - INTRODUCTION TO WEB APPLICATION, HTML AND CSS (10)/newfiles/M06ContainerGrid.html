@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+      grid-template-columns: 20% 80%;
+    }
+    header {
+      grid-area: header;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    nav {
+      grid-area: nav;
+      background-color: #f4f4f4;
+      padding: 15px;
+    }
+    main {
+      grid-area: main;
+      padding: 15px;
+    }
+    footer {
+      grid-area: footer;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <header>
+      <h1>My Website</h1>
+    </header>
+
+    <nav>
+      <p>Home</p>
+      <p>About</p>
+      <p>Services</p>
+    </nav>
+
+    <main>
+      <h2>Main Content</h2>
+      <p>This is the content area.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Website</p>
+    </footer>
+  </div>
+
+<!--  Grid display -->
+  <h3>
+     Grid Display pattern 
+  </h3>
+
+  <div class="grid-container">
+  <div>Box 1</div>
+  <div>Box 2</div>
+  <div>Box 3</div>
+  <div>Box 4</div>
+    <div>Box 1</div>
+  <div>Box 2</div>
+  <div>Box 3</div>
+  <div>Box 4</div>
+</div>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  gap: 10px;
+  padding: 10px;
+  background: lightgray;
+}
+.grid-container div {
+  background: darkcyan;
+  color: white;
+  padding: 20px;
+}
+</style>
+
+
+</body>
+</html>

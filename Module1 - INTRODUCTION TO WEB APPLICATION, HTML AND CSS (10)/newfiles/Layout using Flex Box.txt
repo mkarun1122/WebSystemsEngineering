@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+    }
+    nav {
+      width: 20%;
+      background: #f4f4f4;
+      padding: 15px;
+    }
+    main {
+      width: 80%;
+      padding: 15px;
+    }
+    footer {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <p>Home</p>
+      <p>About</p>
+      <p>Contact</p>
+    </nav>
+    <main>
+      <h2>Welcome</h2>
+      <p>This is the main content area.</p>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>

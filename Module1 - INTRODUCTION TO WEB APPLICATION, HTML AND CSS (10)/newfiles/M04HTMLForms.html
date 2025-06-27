@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <!-- 
+    
+    | Tag/Type                | Purpose                      |
+| ----------------------- | ---------------------------- |
+| `<input>`               | Basic input field            |
+| `type="text"`           | Single-line text input       |
+| `type="email"`          | Validated email input        |
+| `type="password"`       | Password input               |
+| `type="radio"`          | Select one from a group      |
+| `type="checkbox"`       | Select multiple options      |
+| `type="submit"`         | Submit the form              |
+| `<textarea>`            | Multi-line input             |
+| `<select>` / `<option>` | Drop-down list               |
+| `<label>`               | Defines a label for an input |
+
+    -->
+    
+    
+<form action="/submit" method="post">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" required><br><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+
+  <label>Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <label>Skills:</label><br>
+  <input type="checkbox" name="skills" value="html"> HTML
+  <input type="checkbox" name="skills" value="css"> CSS
+  <input type="checkbox" name="skills" value="js"> JavaScript<br><br>
+
+  <label for="city">City:</label>
+  <select id="city" name="city">
+    <option value="chennai">Chennai</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="delhi">Delhi</option>
+    <option value="hyd">Hyderabad</option>
+  </select><br><br>
+
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+  <input type="submit" value="Register">
+</form>
+
+
+    
+
+
+</body>
+</html>
