@@ -1,0 +1,37 @@
+<?php
+$uploadDir = "uploads/";
+$filename = basename($_FILES["myFile"]["name"]);
+$targetFile = $uploadDir . $filename;
+
+// Upload the file
+if (move_uploaded_file($_FILES["myFile"]["tmp_name"], $targetFile)) {
+    echo "File uploaded successfully: $filename<br>";
+
+    // Open the file for reading
+    $handle = fopen($targetFile, "r");
+    if ($handle) {
+        echo "<strong>File Content:</strong><br><pre>";
+        echo fread($handle, filesize($targetFile));
+        echo "</pre>";
+        fclose($handle);
+    }
+
+    // Write to file (overwrite)
+    file_put_contents($targetFile, "This is new content.\n");
+
+    // Append to file
+    file_put_contents($targetFile, "Appended line.\n", FILE_APPEND);
+
+    // Read again to show updated content
+    echo "<strong>Updated File Content:</strong><br><pre>";
+    echo file_get_contents($targetFile);
+    echo "</pre>";
+
+    // Delete file
+    // Uncomment this line if you want to delete the file after handling
+    // unlink($targetFile);
+    // echo "File deleted.";
+} else {
+    echo "File upload failed.";
+}
+?>
